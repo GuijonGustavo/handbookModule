@@ -13,14 +13,14 @@
 \usepackage{fancyhdr}
 \renewcommand{\baselinestretch}{1.5}
 \begin{document}
-%\begin{figure}[h] %	
-%	%\includegraphics[width=13cm, height=5cm]{img/portada_ssig} %	
-%    \includegraphics[width=14cm, height=5.5cm]{img/portadaF} %	
-%\end{figure}
+\begin{figure}[h] %	
+	%\includegraphics[width=13cm, height=5cm]{img/portada_ssig} %	
+    \includegraphics[width=14cm, height=5.5cm]{img/portadaF} %	
+\end{figure}
 
-\title{Manual del\\Sistema de Integración de Información Cartográfica\\e Información Geoespacial\\(Borrador para comentarios)} %Con este nombre se guardará el proyecto en writeLaTex
+\title{Manual del\\Módulo de Integración de Información Cartográfica\\Sistema de Captura de Metadatos\\ e Información Geoespacial\\Corredor Biológico Mesoaméricano\\(Borrador para comentarios)} %Con este nombre se guardará el proyecto en writeLaTex
 %\author{Fís. Gustavo Magallanes Guijón}
-\date{}
+\date{20 de septiembre de 2017}
 \thispagestyle{empty}
 \maketitle
 
@@ -36,26 +36,28 @@
 \frontmatter 
 
 % aqui definimos el pie de pagina de las paginas pares e impares.
-\lfoot[\tiny{\textit{Sistema de Integración de Información Cartográfica\\e Información Geoespacial}}]{\tiny{\textit{Comisión Nacional para el Conocimiento y uso de la Biodiversidad\\Corredor Biológico Mesoaméricano}}}
-\rfoot[\tiny{\textit{Comisión Nacional para el Conocimiento y uso de la Biodiversidad\\Corredor Biológico Mesoaméricano}}]{\tiny{\textit{Sistema de Integración de Información Cartográfica\\e Información Geoespacial}}}
+\lfoot[\tiny{\textit{Módulo de Integración de Información Cartográfica\\Sistema de Captura de Metadatos}}]{\tiny{\textit{Comisión Nacional para el Conocimiento y uso de la Biodiversidad\\Corredor Biológico Mesoaméricano}}}
+\rfoot[\tiny{\textit{Comisión Nacional para el Conocimiento y uso de la Biodiversidad\\Corredor Biológico Mesoaméricano}}]{\tiny{\textit{Módulo de Integración de Información Cartográfica\\Sistema de Captura de Metadatos}}}
 \renewcommand{\footrulewidth}{0.5pt}
 
 \tableofcontents
 \setcounter{tocdepth}{3} % para que ponga subsubsecciones en el indice
 \mainmatter %empieza la numeración de las páginas
 
+
+
+
 \chapter*{Introducción}
 \addcontentsline{toc}{chapter}{Introducción}
 \markboth{Introducción}{Introducción} % encabezado 
 
-\noindent{La Subcoordinación de Sistemas de Información Geográfica (SSIG) de la Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (Conabio), tiene entre sus objetivos: Actualizar y mantener el componente del sistema de información geográfica del Sistema Nacional de Información sobre Biodiversidad (SNIB); así como asegurar la consistencia de la información cartográfica; y compilar, sistematizar y analizar información geográfica, para ayudar en la toma de decisiones derivadas de los resultados de los diferentes proyectos desarrollados en la Comisión. Todo ello con el propósito de proporcionar información geográfica estandarizada y de calidad al personal de la Comisión y público en general. Para cumplir con dichos objetivos y buscando que los datos sean de utilidad al usuario, es necesario documentar la información cartografía a través del manejo de “metadatos geoespaciales”. }
+\noindent{La Subcoordinación de Sistemas de Información Geográfica (SSIG), de la Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (Conabio), tiene entre sus objetivos: 1) actualizar y mantener el componente del sistema de información geográfica del Sistema Nacional de Información sobre Biodiversidad (SNIB); 2) asegurar la consistencia de la información cartográfica; y 3) compilar, sistematizar y analizar información geográfica, para ayudar en la toma de decisiones derivadas de los resultados de los diferentes proyectos desarrollados en la Comisión. Todo ello con el propósito de proporcionar información geográfica estandarizada y de calidad al personal de la Comisión y público en general. Para cumplir con dichos objetivos y buscando que los datos sean de utilidad al usuario, es necesario documentar la información cartografía a través del manejo de “metadatos geoespaciales”. }
 
-El metadato surge por la necesidad de mejorar la adquisición, distribución, utilización y mapeo de los datos geoespaciales, El metadato se define como la “información acerca de los datos” o “datos de los datos”; que describe el contenido, calidad, condición y referencia espacial de los datos. 
+El metadato surge por la necesidad de mejorar la adquisición, distribución, utilización y mapeo de los datos geoespaciales, creándose en EEUU el Comité Federal de Datos Geográficos (FGDC por sus siglas en inglés) para coordinar la Infraestructura Nacional de Datos Espaciales (NSDI, en inglés también) encargada de cubrir esa necesidad. El metadato se define como la “información acerca de los datos” o “datos de los datos”; que describe el contenido, calidad, condición y referencia espacial de los datos. 
 
-La estructura de los metadatos geoespaciales digitales que maneja la CONABIO sigue el estándar aprobado por el FGDC\footnote{El Comité Federal de Datos Geográficos (FGDC por sus siglas en inglés) se creó en los EEUU para coordinar la Infraestructura Nacional de Datos Espaciales (NSDI, en inglés también).}, que provee un conjunto común de terminologías, definiciones e información acerca de datos geoespaciales. El estándar especifica los elementos necesarios para apoyar el uso de los metadatos en los siguientes puntos: 1) mantener una inversión interna en la organización de los datos geoespaciales; 2) proveer información hacia las agencias distribuidoras de datos y catálogos; y 3) proveer información necesaria para procesar e interpretar la transferencia de datos desde otras organizaciones. Así mismo, proporciona la información requerida por un usuario al determinar (a) la disponibilidad de un dato o conjunto de datos geoespaciales, (b) la propiedad de un dato o conjunto de datos geoespaciales para un uso futuro, (c) la forma de acceso al dato o conjunto de datos geoespaciales y (d) la transferencia exitosa del dato o conjunto de datos geoespaciales.
+La estructura de los metadatos geoespaciales digitales que maneja la CONABIO sigue el estándar aprobado por el FGDC, que provee un conjunto común de terminologías, definiciones e información acerca de datos geoespaciales. El estándar especifica los elementos necesarios para apoyar el uso de los metadatos en los siguientes puntos: 1) mantener una inversión interna en la organización de los datos geoespaciales; 2) proveer información hacia las agencias distribuidoras de datos y catálogos; y 3) proveer información necesaria para procesar e interpretar la transferencia de datos desde otras organizaciones. Así mismo, proporciona la información requerida por un usuario al determinar (a) la disponibilidad de un dato o conjunto de datos geoespaciales, (b) la propiedad de un dato o conjunto de datos geoespaciales para un uso futuro, (c) la forma de acceso al dato o conjunto de datos geoespaciales y (d) la transferencia exitosa del dato o conjunto de datos geoespaciales.
 
-El estándar se divide en siete secciones:
-
+El estándar se divide en siete secciones, algunas obligatorias (no deben quedarse vacías) y otras opcionales (que se proveen a juicio del productor). A continuación se describen estas secciones. 
 \begin{enumerate}
 \item \textbf{Identificación}: información básica acerca de los datos como título, área incluida, temas, actualidad, restricciones, etcétera.
 \item \textbf{Calidad de los datos}: evaluación general de los datos como precisión, metodología, fuentes originales, etcétera.
@@ -70,7 +72,7 @@ El estándar se divide en siete secciones:
 %\addcontentsline{toc}{chapter}{Metadatos Geoespaciales}
 %\markboth{n}{Introducción} % encabezado 
 
-\noindent{Con base en el estándar de metadatos geoespaciales del FGDC (versión 2.0, 1 mayo 2000), la Subdirección de Sistemas de Información Geográfica (SSIG) elaboró una adecuación adaptando el estándar a las necesidades de la CONABIO, manteniendo el objetivo primordial del estándar que es el de documentar los datos geoespaciales. Para entenderla, a continuación se describen los siguientes puntos:}
+\noindent{Con base en el estándar de metadatos geoespaciales del FGDC (versión 2.0, 1 mayo 2000), la Subdirección de Sistemas de Información Geográfica (SSIG) elaboró una adecuación adaptando el estándar a las necesidades de la CONABIO, manteniendo el objetivo primordial del estándar que es el de documentar los datos geoespaciales. Para entender dicha adecuación, a continuación se describen los siguientes puntos:}
 
 \begin{enumerate}
 \item Adecuación
@@ -123,13 +125,13 @@ Es importante decir que una vez generado el metadato no se puede borrar. Se pued
 
 \noindent{Como se menciono anteriormente esta herramienta sirve para duplicar una o varias veces un metadato ya terminado, preferentemente, lo cual resulta de mucha ayuda cuando los datos a capturar son muy similares y son pocos los datos que se deben cambiar.}
 
-\textbf{Nota: es importante mencionar que el metadato que se usará para hacer duplicado no contenga información con comillas en alguno de los apartados, ya que si las tiene al momento de hacer el duplicado enviara un mensaje de error.} 
+Nota: es importante mencionar que el metadato que se usará para hacer duplicado no contenga información con comillas en alguno de los apartados, ya que si las tiene al momento de hacer el duplicado enviara un mensaje de error. 
 
-Una vez abierta la sección, dentro del menú inicial ir al botón Duplicar Registro y en la ventana selección del registro de la metabase para editar o revisar, seleccionar el registro que servirá de base para el duplicado.
+Una vez abierta la base, dentro del menú inicial ir al botón Editar registro y en la ventana selección del registro de la metabase para editar o revisar, seleccionar el registro que servirá de base para el duplicado.
 
 Aparece una ventana, en el campo geoespacial que se duplicara y en, se anotara el título del dato se anotara el nombre del dato geoespacial (archivo shapefile o raster) (Este nombre no debe tener más de once caracteres y debe ser escrito en mayúsculas), es importante recordar que tanto el título del registro como el nombre del archivo no se pueden repetir.
 
-Una vez capturada la información necesaria presionar el botón Duplicar Metadato.
+Una vez capturada la información necesaria presionar el botón Generar los metadatos o Salir.
 
 Si se desea duplicar más de una vez el metadato repetir tantas veces como sean necesarios los pasos anteriores.
 
@@ -140,22 +142,22 @@ La sección se divide en cinco partes o elementos compuestos que son: Datos Gene
 
 A continuación se describen cada uno de los elementos compuestos y sus campos. Es importante que la captura se haga en el orden que se enlistan.
 \section{Datos Generales}
-\subsection{Título del mapa}
+\subsection{Título del mapa }
 \noindent{Aparece de forma automática al comenzar a editar, y corresponde al nombre del registro que dimos de alta en la ventana Nombrar y salvar un nuevo registro. Esta se realizó desde la selección del registro.}
 
 \subsection{Fecha de Ingreso}
-\noindent{Es la fecha de inicio de la captura del metadato. Esta fecha es permanente, por lo que no debe modificarse.}
+\noindent{AFecha de inicio de la captura del metadato. Esta fecha es permanente, por lo que no debe modificarse.}
 
 \subsection{Fecha de actualización}
-\noindent{Es la fecha en la que se realiza una actualización o un duplicado del metadato. Ésta, en un principio, será la misma que la fecha de ingreso y será colocada automáticamente por el programa. Solo se modificará si se efectúa una actualización en el dato geoespacial, como la eliminación o adición de elementos geográficos, o eliminación o adición de atributos. Nunca en los casos en los que se reinicie la edición de un registro por no haberse terminado o por correcciones ortográficas o de redacción del metadato.}
+\noindent{AFecha en la que se realiza una actualización o un duplicado del metadato. Ésta, en un principio, será la misma que la fecha de ingreso y será colocada automáticamente por el programa. Solo se modificará si se efectúa una actualización en el dato geoespacial, como la eliminación o adición de elementos geográficos, o eliminación o adición de atributos, por ejemplo. Nunca en los casos en los que se reinicie la edición de un registro por no haberse terminado o por correcciones ortográficas o de redacción del metadato.}
 
 \subsection{Nombre del archivo}
-\noindent{Es el nombre del archivo que corresponde al dato geoespacial (capa digital). Este nombre no debe tener más de once caracteres y debe ser escrito en mayúsculas.}
+\noindent{ANombre del archivo que corresponde al dato geoespacial (capa digital). Este nombre no debe tener más de once caracteres y debe ser escrito en mayúsculas.}
 
 \section{Cita de la información}
 
 \subsection{Institución responsable}
-\noindent{Es la institución responsable de publicar el dato geoespacial y puede ser la institución donde labora el responsable del proyecto, o bien la CONABIO. Queda a criterio del autor o autores la designación de dicha institución.}
+\noindent{Es la institución responsable de publicar el dato geoespacial y puede ser la institución donde labora el responsable del proyecto, o bien la Conabio. Queda a criterio del autor o autores la designación de dicha institución.}
 
 \subsection{Siglas de la institución}
 \noindent{Siglas de la institución designada por el autor o autores como la institución responsable de la publicación.}
@@ -173,7 +175,7 @@ A continuación se describen cada uno de los elementos compuestos y sus campos. 
 \noindent{Es el año de elaboración o modificación del dato geoespacial. }
 
 \subsection{Descripción del metadato}
-\noindent{Es un campo donde se aporta información complementaria a la cita del dato geoespacial. Es decir, si fue extraído de algún atlas o proyecto, si fue apoyado por alguna institución como la CONABIO u otros. Y por último, se debe indicar el nombre del proyecto apoyado por la CONABIO a partir del cual se elaboró el dato geoespacial (sólo aplica para los proyectos apoyados por la CONABIO). }
+\noindent{Es un campo donde se aporta información complementaria a la cita del dato geoespacial. Es decir, si fue extraído de algún atlas o proyecto, si fue apoyado por alguna institución como CONABIO u otros. Y por último, se debe indicar el nombre del proyecto apoyado por la CONABIO a partir del cual se elaboró el dato geoespacial (solo aplica para los proyectos apoyados por CONABIO). }
 
 \subsection{Clave}
 \noindent{Corresponde a la clave del proyecto asignada por la CONABIO, si aplica.}
@@ -184,7 +186,7 @@ A continuación se describen cada uno de los elementos compuestos y sus campos. 
 \subsection{Resumen}
 \noindent{Descripción breve del contenido, área cubierta y tema que representa el dato geoespacial.}
 
-\subsection{Abstract (Resumen en inglés)}
+\subsection{Abstract (Resumen en ingles)}
 \noindent{Opcional.}
 
 \subsection{Objetivos Generales}
@@ -196,20 +198,23 @@ A continuación se describen cada uno de los elementos compuestos y sus campos. 
 \subsection{Tiempo comprendido}
  \noindent{Información acerca del tiempo que se tomó para elaborar el dato geoespacial.}
 
- \subsection{Nivel de avance}
+ \subsection{Nivel de avancea}
 \noindent{Grado de avance del dato geoespacial con base en los siguientes vocablos: planeado, en proceso o completo.}
 
 \subsection{Mantenimiento}
 \noindent{Frecuencia de actualización del dato geoespacial con base en los siguientes términos: diariamente, semanalmente, mensualmente, anualmente, continuamente, irregularmente, no planeado o desconocido.}
 
-\subsection{Tamaño del Dato Geoespacial en Mb}
+\subsection{Tamaño del Dato Geoespacial en mb}
 \noindent{Tamaño en megabytes del o los archivo(s) que contiene el dato geoespacial.}
 
 \subsection{Formato del Dato Geoespacial}
-\noindent{Formato digital del o los archivo(s) que contienen el dato geoespacial. El formato debe corresponder a los estipulados en los lineamientos cartográficos de la CONABIO (documento que describe la forma de cómo entregar Cartografía digital).}
+\noindent{Formato digital del o los archivo(s) que contienen el dato geoespacial. El formato debe corresponder a los estipulados en los lineamientos cartográficos de la Conabio (documento que describe la forma de cómo entregar Cartografía digital).}
 
-\subsection{Ligas www}
+\subsection{ligas www }
 \noindent{En este campo se puede anexar una o varias ligas a páginas Web de interés para los usuarios.}
+
+
+
 \begin{figure}[h] %	
     \includegraphics[width=12cm, height=12.5cm]{img/datosGenerales} %	
 	\caption{Interfaz de Información básica}
@@ -218,10 +223,10 @@ A continuación se describen cada uno de los elementos compuestos y sus campos. 
 
 \section{Restricciones}
 \subsection{Acceso}
-\noindent{Restricciones y prerrequisitos legales de acceso al dato geoespacial, definidos por el productor. Puede tener uno de los siguientes datos: con restricciones o sin restricciones. El primero significa que el dato o datos geoespaciales no serán publicados por la CONABIO en su portal de geoinformación, en el caso de tratarse de cartografía generada a partir de un proyecto apoyado por la CONABIO, esta se publica una vez vencida la fecha de restricción acordada con la institución.}
+\noindent{Restricciones y prerrequisitos legales de acceso al dato geoespacial, definidos por el productor. Puede tener uno de los siguientes datos: con restricciones o sin restricciones. El primero significa que el dato o datos geoespaciales no serán publicados por la Conabio en su portal de geoinformación, en el caso de tratarse de cartografía generada a partir de un proyecto apoyado por la Conabio, esta se publica una vez vencida la fecha de restricción acordada con la institución.}
 
 \subsection{Uso}
-\noindent{Restricciones y prerrequisitos legales de uso del dato geoespacial, puede ser: con restricciones o sin restricciones, conforme lo determine el autor del dato. Aunque haya restricciones de uso, eso no significa que dentro de la CONABIO no se puedan usar en determinados análisis o trabajos internos, aunque la CONABIO no podrá publicar el dato geoespacial.}
+\noindent{Restricciones y prerrequisitos legales de uso del dato geoespacial, puede ser: con restricciones o sin restricciones, conforme lo determine el autor del dato. Aunque haya restricciones de uso, eso no significa que dentro de la Conabio no se puedan usar en determinados análisis o trabajos internos, aunque la CONABIO no podrá publicar el dato geoespacial.}
 
 Es importante señalar que los valores de estos dos últimos campos están de acuerdo con las políticas de distribución de información de la CONABIO.
 
@@ -296,7 +301,7 @@ A continuación se describen cada uno de los elementos compuestos y sus campos q
 \section{Referencia de los datos originales}
 \noindent{Se refiere al o los datos de referencia utilizados para la generación del dato geoespacial, que pueden ser datos georreferenciados en gabinete o campo, datos geoespaciales obtenidos de algún acervo, datos derivados de imágenes de satélite, etcétera. Estos pueden ser impresos o digitales. La referencia de cada dato utilizado deberá ser capturada en un atributo compuesto por separado. Por lo tanto, si para la elaboración del dato geoespacial se utilizaron dos capas en formato digital y un archivo de datos tabulares, se deberán capturar en forma de lista la referencia de dichos datos.}
 
-\subsection{Título del Dato}
+\subsection{Titulo del Dato}
 \noindent{Nombre del dato de referencia que fue usado como insumo para la elaboración del dato geoespacial.}
 
 \subsection{Institución Responsable }
@@ -333,12 +338,12 @@ A continuación se describen cada uno de los elementos compuestos y sus campos q
 \noindent{Se puede colocar citas de internet para complementar la información de referencia.}
 
 \subsection{Autores}
-\noindent{Nombre del autor o de los autores del dato de referencia. Tomando en cuenta la siguiente estructura; para el primer autor: apellidos seguido de coma, iniciales del o los nombres seguido de un punto; si el autor es una institución sólo se anota la sigla o acrónimo y segundo y tercer autor: inicial del o los nombres seguido de un punto; apellidos seguido de una coma.}
+\noindent{Nombre del autor (s) del dato de referencia. Tomando en cuenta la siguiente estructura; para el primer autor: apellidos seguido de coma, iniciales del o los nombres seguido de un punto; si el autor es una institución sólo se anota la sigla o acrónimo y Segundo y tercer autor: inicial del o los nombres seguido de un punto; apellidos seguido de una coma.}
 
 \section{Taxonomía}
 \noindent{En el caso de que los datos geoespaciales representen la distribución de una o varias especies, deberá proporcionarse información taxonómica técnica o general de cada una de las especies que incluya el mapa.}
 
-\textbf{Nota: No se pueden quedar jerarquías superiores vacías si se tiene una jerarquía inferior.}
+Nota: No se pueden quedar jerarquías superiores vacías si se tiene una jerarquía inferior.
 
 \subsection{Cobertura General}
 \noindent{En el caso de que no se conozca la información taxonómica técnica, puede usarse el nombre genérico por el cual se le conoce a la o las especies involucradas. Por ejemplo, aves, mamíferos, murciélagos, cactus, orquídeas, pastos, peces, etc.}
@@ -361,7 +366,7 @@ A continuación se describen cada uno de los elementos compuestos y sus campos q
 \subsection{Cita}
 \noindent{Cita de la publicación o publicaciones en las que se basa el sistema de clasificación taxonómica. No se permite el uso de metacaracteres (ejemplo: @, ?, "", ').}
 
-\subsection{Título}
+\subsection{Titulo}
 \noindent{Nombre del libro, revista, etc. que fue utilizado en el proyecto para la obtención de la información taxonómica.}
 
 \subsection{Institución}
@@ -380,18 +385,26 @@ A continuación se describen cada uno de los elementos compuestos y sus campos q
 \noindent{Corresponde a la fecha de publicación del dato utilizado.}
 
 \subsection{Clave}
-\noindent{Corresponde a la clave del proyecto asignada por la CONABIO, si aplica.}
+\noindent{No aplica.}
 
 \subsection{Descripción}
 \noindent{Es un campo donde se aporta información complementaria a la cita de la referencia taxonómica.}
 
 \subsection{Autores}
-\noindent{Nombre del autor o de los autores del dato utilizado. Tomando en cuenta la siguiente estructura; para el primer autor: apellidos seguido de coma, iniciales del o los nombres seguido de un punto; si el autor es una institución sólo se anota la sigla o acrónimo y segundo y tercer autor: inicial del o los nombres seguido de un punto; apellidos seguido de una coma.}
+\noindent{Nombre del o los autores(s) del dato utilizado. Tomando en cuenta la siguiente estructura; para el primer autor: apellidos seguido de coma, iniciales del o los nombres seguido de un punto; si el autor es una institución sólo se anota la sigla o acrónimo y Segundo y tercer autor: inicial del o los nombres seguido de un punto; apellidos seguido de una coma.}
+
+
 
 \begin{figure}[h] %	
 	\includegraphics[width=12cm, height=4cm]{img/taxonomia} %	
 	\caption{Interfaz de Taxonomia}
 \end{figure}
+
+
+
+
+
+
 
 \chapter{Información Espacial y Atributos}
 \noindent{En esta sección se proporciona información detallada sobre el dato geoespacial. Describiendo su geometría, representación espacial, proyección cartográfica y las características que califican y describen el dato.}
@@ -406,10 +419,10 @@ A continuación se describen cada uno de los elementos compuestos y sus campos. 
 Se especifica la estructura del dato geoespacial seleccionando una de las siguientes opciones: Vector o Raster.
 
 \subsection{Tipo del dato}
-\noindent{Es el tipo de representación (geometría) de los objetos del mundo real a través de los datos geoespaciales. El dato puede estar representado por: puntos, líneas y polígonos (si la estructura es vectorial); y píxel (si la estructura es raster).}
+Es el tipo de representación (geometría) de los objetos del mundo real a través de los datos geoespaciales. El dato puede estar representado por: puntos, líneas y polígonos (si la estructura es vectorial); y píxel (si la estructura es raster).
 
 \subsection{Número total del Dato}
-\noindent{Se escribe el número total de elementos que contiene el dato geoespacial si es vectorial, y si es raster se debe multiplicar las columnas por renglones.}
+Se escribe el número total de elementos que contiene el dato geoespacial si es vectorial, y si es raster se debe multiplicar las columnas por renglones.
 
 \section{Coordenadas del Extremo}
 \noindent{Coordenadas extremas del área geográfica que ocupa el dato geoespacial (oeste, este, norte y sur) y definido por el programa utilizado para su elaboración. Los valores indican la extensión del dato sobre la superficie de la tierra mediante coordenadas geográficas (grados decimales). Ejemplo: Oeste: -117.12; Este: -103.08; Norte: 32.64; y Sur: 22.87.}
@@ -429,7 +442,7 @@ Se especifica la estructura del dato geoespacial seleccionando una de las siguie
 \noindent{Es necesario proporcionar la siguiente información.}
 
 \subsection{Número de renglones}
-\noindent{Número total de renglones a lo largo del eje Y.}
+\noindent{Número total de renglones a lo largo del eje Y.a}
 
 \subsection{Número de columnas}
 \noindent{Número total de columnas a lo largo del eje X.}
@@ -438,7 +451,7 @@ Se especifica la estructura del dato geoespacial seleccionando una de las siguie
 \noindent{Resolución espacial, en metros, del píxel sobre el eje X.}
 
 \subsection{Tamaño del píxel de Y en metros}
-\noindent{Resolución espacial, en metros, del píxel sobre el eje Y. Es importante mencionar que para el tamaño del pixel en X y Y, el caso de que el dato geoespacial este referido a un sistema de coordenadas geográficas, el valor se obtiene multiplicando el tamaño del pixel en grados por un valor estándar aproximado en el Ecuador, en donde 1 grado = 111.111 km.}
+\noindent{Resolución espacial, en metros, del píxel sobre el eje Y. Es importante mencionar que para el tamaño del pixel en X y Y, el caso de que el dato geoespacial este referido a un sistema de coordenadas geográficas, el valor se obtiene multiplicando el tamaño del pixel en grados por un valor estándar aproximado en el Ecuador, en donde 1$\circ$=111.111 km.}
 
 \subsection{Coordenada X del origen del raster}
 \noindent{Coordenada en grados decimales o en metros, según la proyección, del punto de origen del raster sobre el eje X, que corresponde a la esquina superior izquierda del raster.}
@@ -462,14 +475,14 @@ Se especifica la estructura del dato geoespacial seleccionando una de las siguie
 \subsection{Nombre de la Entidad (Tabla)}
 \noindent{Nombre del archivo que contiene los atributos del dato geoespacial (capa digital). Si el dato geoespacial es un shapefile manejar el nombre del dato con extensión .dbf. (Y si el dato es de estructura raster, para un grid de Arc/Info manejar el nombre del dato con la extensión .vat).}
 
-\subsection{Descripción de la Entidad (Tabla)}
+\subsection{Descripción de la entidad (Tabla)}
 \noindent{Descripción breve del contenido de la tabla del dato geoespacial. Los siguientes incisos describen los campos que contiene la tabla del dato geoespacial, por lo tanto se repetirán “n” veces dependiendo de cuantos campos tenga la tabla.}
 
 \subsection{Nombre}
 \noindent{Corresponde al nombre del campo que describe alguna característica o valor del dato geoespacial. Se deberá anotar tal cual como se muestra en el dato geoespacial.}
 
 \subsection{Descripción}
-\noindent{Breve descripción del contenido del atributo, que dependerá de la información que contenga el mismo.}
+\noindent{¿Qué representa el atributo? Breve descripción del contenido del atributo, que dependerá de la información que contenga el mismo.}
 
 \subsection{Fuente}
 \noindent{A través de qué o quién se definió el nombre, características y uso del atributo. Puede ser un software, responsable del proyecto, una institución, etc.}
@@ -489,9 +502,9 @@ Se especifica la estructura del dato geoespacial seleccionando una de las siguie
 \section{Cartografía}
 \subsection{Subir archivos}
 
-\noindent{Una vez capturados y guardados los metadatos, es posible enviar la cartografía correspondiente a la CONABIO para ser previsualizada en el geoportal de la CONABIO.}
+\noindent{Una vez capturados y guardados los metadatos, es posible enviar la cartografía correspondiente a la CONABIO para ser visualizada en el geoportal de la CONABIO.}
 
-Para esto, en esta sección aparece el botón con la leyenda Subir archivos. Si el archivo es el correcto se publicará la cartografía en un servidor de mapas (En este caso Geoserver) para su visualización.
+Para esto, en esta sección aparece el botón con la leyenda “subor archivo” el cual remite a subir dicho archivo.  Este proceso, si el archivo es el correcto publicará la cartografía en un servidor de mapas (En este caso Geoserver) para su visualización.
 
 Hay que tener en cuenta que para que sea posible la publicación del archivo se debe de cumplir que:
 \begin{enumerate}
@@ -520,11 +533,11 @@ Hay que tener en cuenta que para que sea posible la publicación del archivo se 
 
 \textbf{Caturista}. Es aquella persona que ingresa los datos al módulo de información cartográfica, llena los formularios, y guarda la información. Este rol no puede subir cartografía al módulo.
 
-\textbf{Analista}. Este rol es quien además de poder editar y validar la información, puede subir la cartografía al módulo. Por lo que es responsable de que la información que se captura sea correcta y de que lo que se sube a los servidores de CONABIO esté en perfecto estado topológico. Así como libre de malware. En este sentido, el analista puede tener uno o varios capturistas a su cargo, por lo que funge también como coordinador de ellos.
+\textbf{Analista}. Este rol es quien además de poder editrar y validar la información, puede subir la cartografía al módulo. Por lo que es responsable de que la información que se captura sea correcta y de que lo que se sube a los servidores de CONABIO está en perfecto estado topológico. Así como libre de malware. En este sentido, el analista puede tener uno o varios capturistas a su cargo, por lo que funge también como coordinador de ellos.
 
 El analista puede dar de alta a uno o varios capturistas. Y es quien coordina el trabajo del equipo.   
 
-\textbf{Administrador}. El aquel que puede dar de alta/baja a analistas como capturistas. Pero también puede dar de alta a otro administrador. Es quien está a cargo de que el sistema funcione correctamente y de atender todas aquellas contingencias que puedan ocurrir.
+\textbf{Administrador}. El aquel que puede dar de alta/baja a analistas como capturistas. Pero también puede dar de alta a otro administrador. El quien está a cargo de que el sistema funcione correctamente y de atender todas aquellas contingencias que puedan ocurrir.
 
 \begin{figure}[h!] %	
 	\includegraphics[width=12cm, height=6cm]{img/registroColaboradores} %	
@@ -540,24 +553,32 @@ El analista puede dar de alta a uno o varios capturistas. Y es quien coordina el
 
 \noindent{\textbf{Información básica}}
 
-\textbf{Cita de la información}: García, Gerardo, (2000). “Poligonal y zonas núcleo y de amortiguamiento de la reserva de biosfera calakmul, campeche”. Extraído del proyecto j118 uso actual de suelo y estado de conservación de la reserva de la biosfera Calakmul, Campeche.
+\textbf{Cita de la información}: garcía, gerardo, (2000). “poligonal y zonas núcleo y de amortiguamiento de la reserva de biosfera calakmul, campeche”. extraído del proyecto j118 uso actual de suelo y estado de conservación de la reserva de la biosfera calakmul, campeche.
 Escala 1:50 000. El Colegio de la Frontera Sur (ECOSUR). México. El proyecto fue
 financiado por la Comisión Nacional para el Conocimiento y Uso de la Biodiversidad
 (CONABIO).
 
-\textbf{Resumen}: Con base en el decreto presidencial publicado en el Diario Oficial de la Federación del 23 de mayo de 1989, que establece los límites de la reserva, se generó una cobertura con la delimitación de las poligonales de las áreas de amortiguamiento y las zonas núcleo (norte y sur). La cobertura fue generada en el programa AutoCAD. La poligonal fue ajustada al límite fronterizo señalado por el Instituto de Estadística, Geografía e Informática (INEGI) en sus cartas 1:50 000, debido a que uno de los vértices del decreto cayó cerca de 200m dentro del territorio de Guatemala. Fue elaborado originalmente en la proyección UTM, quedando comprendido entre las zonas 15 y 16. Sin embargo para representar en un solo mapa la totalidad del área de la reserva se realizó una unión. Los metadatos descritos a continuación están basados en la cobertura con coordenadas geográficas.
+\textbf{Resumen}: con base en el decreto presidencial publicado en el diario oficial de la federación del 23 de mayo de 1989, que establece los límites de la reserva, se generó una cobertura con la
+delimitación de las poligonales de las áreas de amortiguamiento y las zonas núcleo (norte y
+sur). La cobertura fue generada en el programa AutoCAD. La poligonal fue ajustada al límite
+fronterizo señalado por el Instituto de Estadística, Geografía e Informática (INEGI) en sus
+cartas 1:50 000, debido a que uno de los vértices del decreto cayó cerca de 200 m dentro del
+territorio de Guatemala. Fue elaborado originalmente en la proyección UTM, quedando
+comprendido entre las zonas 15 y 16. Sin embargo para representar en un solo mapa la
+totalidad del área de la reserva se realizó una unión. Los metadatos descritos a continuación
+están basados en la cobertura con coordenadas geográficas.
 
-\textbf{objetivos}: Delimitar el área de la reserva y circunscribir la superficie del área de estudio.
+\textbf{objetivos}: delimitar el área de la reserva y circunscribir la superficie del área de estudio.
 
-\textbf{Datos complementarios}: La información se generó a partir de las coordenadas geográficas publicadas en el diario oficial de la federación.
+\textbf{Datos complementarios}: la información se generó a partir de las coordenadas geográficas publicadas en el diario oficial de la federación.
 
 \textbf{Tiempo comprendido}: 1996 – 2000
 
-\textbf{Nivel de avance}: Completo
+\textbf{Nivel de avance}: completo
 
-\textbf{Mantenimiento}: No planeado
+\textbf{Mantenimiento}: no planeado
 
-\textbf{Tamaño del dato geoespacial en Mb}: 0.0087308
+\textbf{tamaño del dato geoespacial en mb}: 0.0087308
 
 \textbf{Formato del dato geoespacial}: Shapefile. Formato vectorial compuesto por 4 archivos (shp, shx, dbf, prj)
 
@@ -575,52 +596,53 @@ financiado por la Comisión Nacional para el Conocimiento y Uso de la Biodiversi
 
 \noindent{\textbf{Restricciones}}
 
-\textbf{Acceso}: Sin restricciones
+\textbf{Acceso}: sin restricciones
 
-\textbf{Uso}: Sin restricciones
+\textbf{Uso}: sin restricciones
 
 \noindent{\textbf{Palabras claves}
 
 \textbf{Temas}: 1:50000, proyecto j118, regionalización
 
-\textbf{Sitios}: Calakmul, Campeche, estatal
+\textbf{Sitios}: calakmul, campeche, estatal
 
 \noindent{\textbf{Ambiente de trabajo}}
 
 \textbf{Software y hardware}: sig arc-info, versión 9.2 y sunw,sun-fire-v890; sparc; sun4u
 
-\textbf{Sistema operativo}: UNIX
+\textbf{Sistema operativo}: unix
 
-\textbf{Requerimientos tecnicos}: Tener arc/info, arcview o sistemas compatibles.
+\textbf{Requerimientos tecnicos}: tener arc/info, arcview o sistemas compatibles.
 
 \noindent{\textbf{Calidad de los datos}}
 
-\textbf{Metodología}: Gabinete
+\textbf{Metodología}: gabinete
 
-\textbf{Descripcion de la metodologia}: Se capturaron las coordenadas geográficas en un archivo *.cgp de autocad, al cual posteriormente se le aplicó el programa vértice.lsp para proyectar las coordenadas y generar una poligonal que une los vértices en orden consecutivo. posteriormente, esta poligonal se ajustó al límite fronterizo con Guatemala.
+\textbf{Descripcion de la metodologia}: se capturaron las coordenadas geográficas en un archivo *.cgp de autocad, al cual posteriormente se le aplicó el programa vértice.lsp para proyectar las coordenadas y generar una poligonal que une los vértices en orden consecutivo. posteriormente, esta
+poligonal se ajustó al límite fronterizo con Guatemala.
 
-\textbf{Descripcion del proceso}: Se utilizó autocad y el sig arc/info, para realizar los distintos proceso en la elaboración del mapa.
+\textbf{Descripcion del proceso}: se utilizó autocad y el sig arc/info, para realizar los distintos proceso en la elaboración del mapa.
 
 \noindent{\textbf{Referencia del dato}}
-\textbf{Referencia}: Estados Unidos Mexicanos - Presidencia de la República, (23 de mayo de 1989). “decreto por el que se declara la reserva de la biosfera Calakmul, ubicada en los municipios de champotón y hopelchen, camp”. primera publicación.
+\textbf{Referencia}: estados unidos mexicanos - presidencia de la república, (23 de mayo de 1989). “decreto por el que se declara la reserva de la biosfera calakmul, ubicada en los municipios de champotón y hopelchen, camp”. primera publicación.
 
 \textbf{Escala original}: 1:1
 
-\textbf{Formato original}: Impreso.
+\textbf{Formato original}: impreso
 
 \noindent{\textbf{Información espacial}}
 
-\textbf{Estructura del dato}: Vector.
+\textbf{Estructura del dato}: vector
 
-\textbf{Tipo del dato}: Polígonos.
+\textbf{Tipo del dato}: polígonos
 
 \textbf{Numero total del dato}: 7
 
 \textbf{Proyección cartográfica}
 
-\textbf{Sistema de coordenadas}: Geográfica.
+\textbf{Sistema de coordenadas}: geográfica
 
-\textbf{Nombre de la proyección}: Sistema de coordenadas geográfico.
+\textbf{Nombre de la proyección}: sistema de coordenadas geográfico
 
 \textbf{Datum horizontal}: wgs84
 
@@ -630,37 +652,37 @@ financiado por la Comisión Nacional para el Conocimiento y Uso de la Biodiversi
 
 \textbf{Nombre de entidad (tabla)}: rvagw.dbf
 
-\textbf{Descripcion de la entidad (tabla)}: Se describen las áreas que conforman la reserva de la biosfera Calakmul
+\textbf{Descripcion de la entidad (tabla)}: se describe las áreas que conforman la reserva de la biosfera calakmul
 
-\textbf{Nombre del atributo}: Área
+\textbf{Nombre del atributo}: área
 
-\textbf{Descripción del atributo}: Proporciona la superficie, en metros cuadrados, de cada entidad o polígono.
+\textbf{Descripción del atributo}: proporciona la superficie, en metros cuadrados, de cada entidad o polígono.
 
-\textbf{Fuente del atributo}: Calculada por arc-info
+\textbf{Fuente del atributo}: calculada por arc-info
 
-\textbf{Unidades de medida del atributo}: Grados decimales
+\textbf{Unidades de medida del atributo}: grados decimales
 
-\textbf{Tipo de dato del atributo}: Numérico
+\textbf{Tipo de dato del atributo}: numérico
 
-\textbf{Nombre del atributo}: Perimeter
+\textbf{Nombre del atributo}: perimeter
 
-\textbf{Descripción del atributo}: Proporciona el perímetro de cada entidad o polígono.
+\textbf{Descripción del atributo}: proporciona el perímetro de cada entidad o polígono.
 
-\textbf{Fuente del atributo}: Determinado por arc-info
+\textbf{Fuente del atributo}: determinado por arc-info
 
-\textbf{Unidades de medida del atributo}: Grados decimales
+\textbf{Unidades de medida del atributo}: grados decimales
 
-\textbf{Tipo de dato del atributo}: Numérico
+\textbf{Tipo de dato del atributo}: numérico
 
 \textbf{Nombre del atributo}: atri\_reser
 
-\textbf{Descripción del atributo}: Contiene la descripción del tipo de polígono, es decir, indica si éste pertenece a la zona núcleo o a la de amortiguamiento.
+\textbf{Descripción del atributo}: contiene la descripción del tipo de polígono, es decir, indica si éste pertenece a la zona núcleo o a la de amortiguamiento.
 
-\textbf{Fuente del atributo}: Diario Oficial de la Federación, 23 de mayo de 1989
+\textbf{Fuente del atributo}: diario oficial de la federación, 23 de mayo de 1989
 
 \noindent{\textbf{Unidades de medida del atributo}}
 
-\textbf{Tipo de dato del atributo}: Carácter
+\textbf{Tipo de dato del atributo}: carácter
 
 \section*{Ejemplo 2}
 \section*{Alouatta palliata (saraguato de manto). Distribución potencial}
@@ -668,21 +690,31 @@ financiado por la Comisión Nacional para el Conocimiento y Uso de la Biodiversi
 
 \noindent{\textbf{Información básica}}
 
-\textbf{Cita de la información}: Ceballos-Gónzalez, G. J., S. Blanco, C. González y E. Martínez. 2006. Alouatta palliata saraguato de manto). Distribución potencial. Extraído del Proyecto DS006: Modelado de la distribución de las especies de mamíferos de México para un análisis GAP. El Proyecto fue financiado por la Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO).
+\textbf{Cita de la información}: ceballos-gónzalez, g. j., s. blanco, c. gonzález y e. martínez. 2006. Alouatta palliata saraguato de manto). Distribución potencial. Extraído del Proyecto DS006: Modelado de la distribución de las especies de mamíferos de México para un análisis GAP. El Proyecto fue financiado por la Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO).
 
-\textbf{Resumen}: Como parte de un análisis de vacíos (gap analysis), uno de los insumos es la producción de mapas de distribución de las especies. Para ello, se usó el algoritmo GARP (Genetic Algorithm for Rule-set Production; Stockwell y Peters 1999), que modela el nicho ecológico a partir de coberturas climáticas digitales y sus localidades de registros, dando como resultado un mapa de distribución potencial, representado como un mapa con niveles de consenso que indican las áreas con mayor posibilidad de encontrar las condiciones favorables para cada especie. Los mapas de distribución potencial fueron 'recortados' utilizando los polígonos del Atlas de los Mamíferos de México para aproximar esa distribución potencial a una 'distribución histórica'. Posteriormente, para lograr una visión de la distribución de la riqueza de las especies de mamíferos, los mapas individuales fueron sobrepuestos entre sí. Este proceso requirió convertir los mapas de distribución histórica con valores de consenso en mapas binarios (presencia/ausencia). Los resultados parciales y finales de este estudio permiten llenar huecos en el conocimiento biogeográfico de las especies y a su vez son la base para hacer un análisis sobre los patrones de distribución de este grupo, logrando un diagnóstico propositivo del sistema actual de las áreas naturales protegidas del país. Esta especie se encuentra enlistada en la NOM-059-SEMARNAT-2010 bajo la categoría de riesgo: En peligro de extinción (P) y es una especie prioritaria.
+\textbf{Resumen}: como parte de un análisis de vacíos (gap analysis), uno de los insumos es
+la producción de mapas de distribución de las especies. Para ello, se usó el algoritmo GARP (Genetic Algorithm for Rule-set Production; Stockwell y Peters 1999), que modela el nicho ecológico a partir de coberturas climáticas digitales y sus localidades de registros, dando como resultado un mapa de
+distribución potencial, representado como un mapa con niveles de consenso que indican las áreas con mayor posibilidad de encontrar las condiciones favorables para cada especie. Los mapas de distribución potencial fueron 'recortados' utilizando los polígonos del Atlas de los Mamíferos de México
+para aproximar esa distribución potencial a una 'distribución histórica'. Posteriormente, para lograr una visión de la distribución de la riqueza de las especies de mamíferos, los mapas individuales fueron sobrepuestos entre sí. Este proceso requirió convertir los mapas de distribución histórica con
+valores de consenso en mapas binarios (presencia/ausencia). Los resultados parciales y finales de este estudio permiten llenar huecos en el conocimiento biogeográfico de las especies y a su vez son la base para hacer un análisis sobre los patrones de distribución de este grupo, logrando un diagnóstico
+propositivo del sistema actual de las áreas naturales protegidas del país. Esta especie se encuentra enlistada en la NOM-059-SEMARNAT-2010 bajo la categoría de riesgo "En peligro de extinción" (P) y es una especie prioritaria.
 
-\textbf{Objetivos}: Producir mapas de distribución potencial de los mamíferos con base en el modelado de sus nichos ecológicos, que sirvan de base para un análisis GAP en México.
+\textbf{Objetivos}: producir mapas de distribución potencial de los mamíferos con base en el
+modelado de sus nichos ecológicos, que sirvan de base para un análisis GAP en México.
 
-\textbf{Datos complementarios}: Las coberturas climáticas digitales utilizadas fueron: 1.temperatura promedio anual ($\circ$C), 2.Oscilación diurna de la temperatura ($\circ$C), 3.Isotermalidad ($\circ$C), 4.Estacionalidad de la temperatura, 5. Temperatura máxima promedio del periodo más cálido ($\circ$C), 6.Temperatura mínima promedio del periodo más frío ($\circ$C), 7.Oscilación anual de la temperatura ($\circ$C), 8.Temperatura promedio del cuatrimestre más lluvioso ($\circ$C), 9.Temperatura promedio del cuatrimestre más seco ($\circ$C), 10.Temperatura promedio del cuatrimestre más cálido ($\circ$C), 11.Temperatura promedio del cuatrimestre más frío ($\circ$C), 12.Precipitación anual (mm), 13.Precipitación del periodo más lluvioso (mm), 14.Precipitación del periodo más seco (mm), 15.Estacionalidad de la precipitación 16.Precipitación del cuatrimestre más lluvioso (mm), 17.Precipitación del cuatrimestre más seco (mm), 18.Precipitación del cuatrimestre más cálido (mm), 19.Precipitación del cuatrimestre más frío (mm). Las coberturas topográficas: pendiente, índice topográfico y elevación.
+\textbf{Datos complementarios}: las coberturas climáticas digitales utilizadas fueron: 1.temperatura
+promedio anual ($\circ$C), 2.Oscilación diurna de la temperatura ($\circ$C), 3.Isotermalidad ($\circ$C), 4.Estacionalidad de la temperatura, 5. Temperatura máxima promedio del periodo más cálido ($\circ$C), 6.Temperatura mínima promedio del periodo más frío ($\circ$C), 7.Oscilación anual de la temperatura
+($\circ$C), 8.Temperatura promedio del cuatrimestre más lluvioso ($\circ$C), 9.Temperatura promedio del cuatrimestre más seco ($\circ$C), 10.Temperatura promedio del cuatrimestre más cálido ($\circ$C), 11.Temperatura promedio del cuatrimestre más frío ($\circ$C), 12.Precipitación anual (mm), 13.Precipitación del periodo más lluvioso (mm), 14.Precipitación del periodo más seco (mm), 15.Estacionalidad de la precipitación 16.Precipitación del cuatrimestre más lluvioso (mm), 17.Precipitación del cuatrimestre más seco (mm), 18.Precipitación del cuatrimestre más cálido (mm), 19.Precipitación del
+cuatrimestre más frío (mm). Las coberturas topográficas: pendiente, índice
+topográfico y elevación.
 
-\textbf{Formato del dato geoespacial}: Shapefile. formato vectorial compuesto por 4 archivos (shp, shx, dbf,prj)
+\textbf{Formato del dato geoespacial}: shapefile. formato vectorial compuesto por 4 archivos (shp, shx, dbf,prj)
 
 \textbf{Tiempo comprendido}: 2005-2006
 
-\textbf{Nivel de avance}: Completo
+\textbf{Nivel de avance}: completo
 
-\textbf{Mantenimiento}: No planeado
+\textbf{Mantenimiento}: no planeado
 
 \textbf{Tamaño en bytes}: 0.08193
 
@@ -702,120 +734,136 @@ financiado por la Comisión Nacional para el Conocimiento y Uso de la Biodiversi
 
 \noindent{\textbf{Restricciones}}
 
-\textbf{Acceso}: Sin restricciones
+\textbf{Acceso}: sin restricciones
 
-\textbf{Uso}: Sin restricciones
+\textbf{Uso}: sin restricciones
 
 \noindent{\textbf{Ambiente de trabajo}}
 
-\textbf{Software y hardware}: sig arcview, versión 3.2, genetic algorithm for rule-set production (DesktopGARP, ver. 1.1.6) y PC Workstation Pentium 4
+\textbf{Software y hardware}: sig arcview, versión 3.2, genetic algorithm for rule-set production
+(DesktopGARP, ver. 1.1.6) y PC Workstation Pentium 4
 
-\textbf{Sistema operativo}: Windows XP Profesional
+\textbf{Sistema operativo}: windows xp profesional
 
-\textbf{Requerimientos tecnicos}: Tener arc-info, arcview o sistemas compatibles.
+\textbf{Requerimientos tecnicos}: tener arc-info, arcview o sistemas compatibles.
 
 \noindent{\textbf{calidad de los datos}}
 
-\textbf{Metodología}: Gabinete
+\textbf{Metodología}: gabinete
 
-\textbf{Descripcion de la metodologia}: Los mapas de distribución geográfica potencial se produjeron a partir del modelado de los nichos ecológicos de cada una de las 467 especies de mamíferos terrestres de méxico. este enfoque ha demostrado ser una herramienta efectiva para una amplia variedad de grupos taxonómicos y en el contexto de análisis de patrones de la biodiversidad y el análisis gap.
+\textbf{Descripcion de la metodologia}: los mapas de distribución geográfica potencial se produjeron a partir del modelado de los nichos ecológicos de cada una de las 467 especies de mamíferos terrestres de méxico. este enfoque ha demostrado ser una herramienta efectiva para una amplia variedad de grupos taxonómicos y en el contexto de análisis de patrones de la biodiversidad y el análisis gap.
 
-\textbf{Descripcion del proceso}: a) recolección de la información primaria de la distribución de las especies: Se utilizaron las bases de datos de los mamíferos de la CONABIO, con adiciones de otras fuentes. Revisando los registros para detectar puntos incorrectos o dudosos. B) Compilación de una base de datos geográfica: se utilizó la Base de Datos Climática BioClim México proporcionada por el Dr. Oswaldo Téllez. C) Modelado de nichos ecológicos y distribuciones potenciales: Se generaron con el algoritmo GARP, produciendo 100 modelos, seleccionando los 10 mejores de acuerdo a los valores mínimos de los errores de omisión y comisión, obteniendo un mapa de consenso con valores de 0 a 10, donde el 1 representa los píxeles donde un modelo predice presencia, 2 representa los píxeles donde predicen presencia dos modelos y así sucesivamente hasta 10, correspondiendo a los píxeles donde todos los modelos coinciden en predecir la presencia. Para producir los mapas de riqueza de las especies que son necesarios para hacer los análisis GAP, fue necesario que los mapas de consenso de distribución histórica (con valores de 0-10) fueran recodificados a mapas binarios (0-1). Después de realizar pruebas con una muestra de las especies para determinar el valor umbral donde el modelo predice al menos el 90% de las localidades de registro, se determinó que el valor umbral más apropiado para describir la distribución de las especies fue de 8 a 10. Es decir, los valores 8, 9 y 10 fueron convertidos a 1 (presencia) y los valores 0-7, a 0 (ausencia). Una vez reclasificados estos valores, el mapa de distribución potencial de cada especie fue delimitado con su polígono correspondiente de distribución conocida, obtenido del "Atlas Mastozoológico de México", para producir el mapa binario (presencia/ausencia) de distribución histórica.
+\textbf{Descripcion del proceso}: a) recolección de la información primaria de la distribución de las
+especies: Se utilizaron las bases de datos de los mamíferos de la CONABIO, con adiciones de otras fuentes. Revisando los registros para detectar puntos incorrectos o dudosos. B) Compilación de una
+base de datos geográfica: se utilizó la Base de Datos Climática BioClim México proporcionada por el Dr. Oswaldo Téllez. C) Modelado de nichos ecológicos y distribuciones potenciales: Se generaron con el algoritmo GARP, produciendo 100 modelos, seleccionando los 10 mejores de acuerdo a los valores mínimos de los errores de omisión y comisión, obteniendo un mapa de consenso con valores de 0 a 10, donde el 1 representa los píxeles donde un modelo predice presencia, 2 representa los píxeles donde
+predicen presencia dos modelos y así sucesivamente hasta 10, correspondiendo a los píxeles donde todos los modelos coinciden en predecir la presencia. Para producir los mapas de riqueza de las
+especies que son necesarios para hacer los análisis GAP, fue necesario que los mapas de consenso de distribución histórica (con valores de 0-10) fueran recodificados a mapas binarios (0-1). Después de realizar pruebas con una muestra de las especies para determinar el valor umbral donde el modelo predice al menos el 90% de las localidades de registro, se determinó que el valor umbral más apropiado para describir la distribución de las especies fue de 8 a 10. Es decir, los valores 8, 9 y 10 fueron
+convertidos a 1 (presencia) y los valores 0-7, a 0 (ausencia). Una vez reclasificados estos valores, el mapa de distribución potencial de cada especie fue delimitado con su polígono correspondiente de
+distribución conocida, obtenido del "Atlas Mastozoológico de México", para producir el mapa binario (presencia/ausencia) de distribución histórica.
 
-\textbf{Referencia del dato}: Arita H. y G. Ceballos. 1998. Formación de una base de datos para el Atlas Mastozoológico de México. Instituto de Ecología. Universidad Nacional Autónoma de México. México. Base de datos SNIB-CONABIO. Proyecto a003. Disponible en: http://www.conabio.gob.mx/institucion/cgi-bin/datos.cgi?letras\\=a\&numero=3
-
-\textbf{Escala original}: 1:1
-
-\textbf{Formato original}: Digital
-
-\textbf{Referencia del dato}: Sánchez Cordero, V. 1996. Mamíferos de Veracruz. Instituto de Biología. Universidad Nacional Autónoma de México. Bases de datos SNIB-CONABIO. Proyecto A026. México. Disponible en: http://www.conabio.gob.mx/\\institucion/cgi-bin/datos.cgi?Letras=A\&Numeo=26
-
-\textbf{Escala original}: 1:1
-
-\textbf{Formato original}: Digital
-
-\textbf{referencia del dato}: Espinoza-Medinilla, E. E. 1996. Colección zoológica regional del sureste de México. Fase I (estado de Chiapas). Instituto de Historia Natural del estado de Chiapas. Bases de datos SNIB-CONABIO. Proyecto p060. México. Disponible en: http://www.conabio.gob.mx/institucion/cgi-bin/datos.cgi?Letras\\=P\&Numero=60
+\textbf{Referencia del dato}: arita h. y g. ceballos. 1998. formación de una base de datos para el atlas mastozoológico de méxico. instituto de ecología. universidad nacional autónoma de méxico. méxico. base de datos snib-conabio. proyecto a003. disponible en: http://www.conabio.gob.mx/institucion/cgi-bin/datos.cgi?letras\\=a\&numero=3
 
 \textbf{Escala original}: 1:1
 
-\textbf{Formato original}: Digital
+\textbf{Formato original}: digital
 
-\textbf{Referencia del dato}: Lamothe Argumedo, R. 1997. Catálogo sistematizado y actualizado de la Colección Helmintológica del Instituto de Biología. Instituto de Biología. Universidad Nacional Autónoma de México. Bases de datos SNIB-CONABIO. Proyecto P085. México. Disponible en: http://www.conabio.gob.mx/\\institucion/cgi-bin/datos.cgi?Letras\\=P\&Numero=85
-\textbf{Escala original}: 1:1
-
-\textbf{Formato original}: Digital
-
-\textbf{Referencia del dato}: López Wilchis, R. 1995. Base de datos de mamíferos de México depositados en colecciones de Estados Unidos de Norteamérica y Canadá. División de ciencias biológicas y de la Salud. Universidad Autónoma Metropolitana-Iztapalapa. Bases de datos SNIB-CONABIO. Proyecto P130. México. Disponible en: \\http://www.conabio.gob.mx/institucion/cgi-bin/datos.cgi?\\Letras=P\&Numero=130
+\textbf{Referencia del dato}: sánchez cordero, v. 1996. mamíferos de veracruz. instituto de biología. Universidad Nacional Autónoma de México. Bases de datos SNIB-CONABIO. Proyecto A026. México. Disponible en: http://www.conabio.gob.mx/\\institucion/cgi-bin/datos.cgi?Letras=A\&Numeo=26
 
 \textbf{Escala original}: 1:1
 
-\textbf{Formato original}: Digital
+\textbf{Formato original}: digital
 
-\textbf{Referencia del dato}: Pérez Ponce de León, G. 2000. Biodiversidad de Helmintos Parásitos de Vertebrados Silvestres de méxico. Instituto de Biología. Universidad Nacional Autónoma de México. Base de datos SNIB-CONABIO. Proyecto q028. México. Disponible en: http://www.conabio.gob.mx/institucion/cgi-bin/datos.cgi?letras=\\q\&numero=28
+\textbf{referencia del dato}: espinoza-medinilla, e. e. 1996. colección zoológica regional del sureste de méxico. fase i (estado de chiapas). instituto de historia natural del estado de chiapas. bases de datos snib-conabio. proyecto p060. méxico. disponible en: http://www.conabio.gob.mx/institucion/cgi-
+bin/datos.cgi?Letras\\=P\&Numero=60
 
 \textbf{Escala original}: 1:1
 
-\textbf{Formato original}: Digital
+\textbf{Formato original}: digital
 
-\textbf{Referencia del dato}: Bioclim México (Dr. Oswaldo Téllez, Laboratorio de Recursos Naturales.
+\textbf{Referencia del dato}: lamothe argumedo, r. 1997. catálogo sistematizado y actualizado de la
+colección helmintológica del Instituto de Biología. Instituto de Biología.
+Universidad Nacional Autónoma de México. Bases de datos SNIB-CONABIO.
+Proyecto P085. México. Disponible en:
+http://www.conabio.gob.mx/\\institucion/cgi-bin/datos.cgi?Letras\\=P\&Numero=85
+\textbf{Escala original}: 1:1
+
+\textbf{Formato original}: digital
+
+\textbf{Referencia del dato}: lópez wilchis, r. 1995. base de datos de mamíferos de méxico depositados en colecciones de estados unidos y canadá. división de ciencias biológicas y de la
+Salud. Universidad Autónoma Metropolitana-Iztapalapa. Bases de datos SNIB-CONABIO. Proyecto P130. México. Disponible en: \\http://www.conabio.gob.mx/institucion/cgi-bin/datos.cgi?\\Letras=P\&Numero=130
+
+\textbf{Escala original}: 1:1
+
+\textbf{Formato original}: digital
+
+\textbf{Referencia del dato}: pérez ponce de león, g. 2000. biodiversidad de helmintos parásitos de vertebrados silvestres de méxico. instituto de biología. universidad nacional autónoma de méxico. base de datos snib-conabio. proyecto q028. méxico. disponible en: http://www.conabio.gob.mx/institucion/cgi-bin/datos.cgi?letras=\\q\&numero=28
+
+\textbf{Escala original}: 1:1
+
+\textbf{Formato original}: digital
+
+\textbf{Referencia del dato}: bioclim méxico (dr. oswaldo téllez, laboratorio de recursos naturales
 
 UBRIPO-FES Iztacala). Formato grid.
 
 \textbf{Escala original}: 1:1000000
 
-\textbf{Formato original}: Digital
+\textbf{Formato original}: digital
 
-\textbf{Referencia del dato}: U.S. Geological Survey. Eros Data Center. 1999. Hydro 1k Dataset. Formato grid. Disponible en línea: http://edcdaac.usgs.gov/gtopo30/hydro/. sioux falls, south dakota, u.s.a.: USGS EDC and United Nations Environment Programme/Global Resource Information Database (UNEP/GRID).
-
-\textbf{Escala original}: 1:1000000
-
-\textbf{Formato original}: Digital
-
-\textbf{Referencia del dato}: Ceballos, G., S. Blanco, C. González y E. Martínez. 2006. Distribución potencial de Alouatta palliata delimitada, con base al mapa del "Atlas Mastozoológico de México".
+\textbf{Referencia del dato}: u.s. geological survey. eros data center. 1999. hydro 1k dataset. formato grid. disponible en línea: http://edcdaac.usgs.gov/gtopo30/hydro/. sioux falls, south dakota, u.s.a.: usgs edc and united nations environment programme/global resource information database (unep/grid).
 
 \textbf{Escala original}: 1:1000000
 
-\textbf{Formato original}: Digital
+\textbf{Formato original}: digital
 
-\textbf{Referencia del dato}: Ceballos, G. y G. Oliva (coords) 2005. Los Mamíferos Silvestres de México. FCE, CONABIO. México. D. F.
+\textbf{Referencia del dato}: ceballos, g., s. blanco, c. gonzález y e. martínez. 2006. distribución
+potencial de Alouatta palliata delimitada, con base al mapa del "Atlas Mastozoológico de México".
+
+\textbf{Escala original}: 1:1000000
+
+\textbf{Formato original}: digital
+
+\textbf{Referencia del dato}: ceballos, g. y g. oliva (coords) 2005. los mamíferos silvestres de méxico. fce,
+
+CONABIO. México. D. F.
 
 \textbf{Escala original}:
 
-\textbf{Formato original}: Impreso
+\textbf{Formato original}: impreso
 
 \noindent{\textbf{Caracteristicas taxonomía}}
 
-\textbf{reino}: animalia
+\textbf{reino: animalia}
 
-\textbf{Division o fila}: Chordata
+\textbf{Division o fila}: chordata
 
-\textbf{Clase}: Mammalia
+\textbf{Clase}: mammalia
 
-\textbf{Orden}: Primates
+\textbf{Orden}: primates
 
-\textbf{Familia}: Atelidae
+\textbf{Familia}: atelidae
 
-\textbf{Genero}: Alouatta
+\textbf{Genero}: alouatta
 
-\textbf{Especie}: Alouatta palliata
+\textbf{Especie}: alouatta palliata
 
-\textbf{Nombre comun}: Mono aullador, saraguato, saraguato de manto
+\textbf{Nombre comun}: mono aullador, saraguato, saraguato de manto
 
-\textbf{Cita del sistema taxonomico}: Wilson, D. E. y D. M. Reeder. 1993. Mammals Species of the World. A Taxomomic and Geographic Reference, Smithsonian Institution Press, Washington D. C.
+\textbf{Cita del sistema taxonomico}: wilson, d. e. y d. m. reeder. 1993. mammals species of the world. a taxomomic and geographic reference, smithsonian institution press, washington d. c.
 
 \noindent{\textbf{Información de los datos espaciales}
 
-\textbf{Estructura del dato}: Vector
+\textbf{Estructura del dato}: vector
 
-\textbf{Tipo del dato}: Polígonos
+\textbf{Tipo del dato}: polígonos
 
 \textbf{Numero total del dato} : 80
 
 \noindent{\textbf{Proyección cartográfica}
 
-\textbf{Sistema de coordenadas}: Geográfica
+\textbf{Sistema de coordenadas}: geográfica
 
-\textbf{Nombre de la proyección}: Sistema de coordenadas geográfico
+\textbf{Nombre de la proyección}: sistema de coordenadas geográfico
 
 \noindent{\textbf{Información geodésica}
 \textbf{Datum horizontal}: wgs84
@@ -824,16 +872,16 @@ UBRIPO-FES Iztacala). Formato grid.
 
 \textbf{Nombre de entidad (tabla)}: alopalligw.dbf
 
-\textbf{Descripcion de la entidad}: Alouatta palliata (saraguato de manto). Distribución potencial
+\textbf{Descripcion de la entidad}: alouatta palliata (saraguato de manto). distribución potencial
 
-\textbf{Nombre del atributo} : Value
+\textbf{Nombre del atributo} : value
 
-\textbf{Definición del atributo}: Valor de presencia (1)
+\textbf{Definición del atributo}: valor de presencia (1)
 
-\textbf{Tipo de dato} : Numérico
+\textbf{Tipo de dato} : numérico
 
 \noindent{\textbf{Unidades de medida}
 
-\textbf{Origen del atributo}: Atributo por definición del mapa
+\textbf{Origen del atributo: atributo por definición del mapa}
 
 \end{document}
