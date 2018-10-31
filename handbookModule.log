@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2017.9.14)  31 OCT 2018 10:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2017.9.14)  31 OCT 2018 10:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -588,16 +588,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 25.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-LaTeX Warning: No \author given.
-
-[1
+) [1
 
 
 ] [2
 
-] (./handbookModule.toc
+]
+(./handbookModule.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [1
@@ -868,4 +865,4 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  33i,12n,43p,1909b,673s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on handbookModule.dvi (55 pages, 121956 bytes).
+Output written on handbookModule.dvi (55 pages, 122068 bytes).
