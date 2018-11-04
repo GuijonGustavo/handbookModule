@@ -18,9 +18,9 @@
 %    \includegraphics[width=14cm, height=5.5cm]{img/portadaF} %	
 %\end{figure}
 
-\title{Manual del\\Sistema de Integración de Información Cartográfica\\e Información Geoespacial\\} %Con este nombre se guardará el proyecto en writeLaTex
-%\author{Fís. Gustavo Magallanes Guijón}
-\date{}
+\title{Manual del\\Módulo de Integración de Información Cartográfica\\e Información Geoespacial\\} %Con este nombre se guardará el proyecto en writeLaTex
+\author{M. en F.C. Gustavo Magallanes Guijón}
+%\date{}
 \thispagestyle{empty}
 \maketitle
 
@@ -48,7 +48,7 @@
 \addcontentsline{toc}{chapter}{Introducción}
 \markboth{Introducción}{Introducción} % encabezado 
 
-\noindent{La Subcoordinación de Sistemas de Información Geográfica (SSIG) de la Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (Conabio), tiene entre sus objetivos: Actualizar y mantener el componente del sistema de información geográfica del Sistema Nacional de Información sobre Biodiversidad (SNIB); así como asegurar la consistencia de la información cartográfica; y compilar, sistematizar y analizar información geográfica, para ayudar en la toma de decisiones derivadas de los resultados de los diferentes proyectos desarrollados en la Comisión. Todo ello con el propósito de proporcionar información geográfica estandarizada y de calidad al personal de la Comisión y público en general. Para cumplir con dichos objetivos y buscando que los datos sean de utilidad al usuario, es necesario documentar la información cartografía a través del manejo de “metadatos geoespaciales”. }
+\noindent{La Subcoordinación de Sistemas de Información Geográfica (SSIG) de la Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO), tiene entre sus objetivos: Actualizar y mantener los componentes del sistema de información geográfica; así como asegurar la consistencia de la información cartográfica; y compilar, sistematizar y analizar información geográfica, para ayudar en la toma de decisiones derivadas de los resultados de los diferentes proyectos desarrollados en la Comisión. Todo ello con el propósito de proporcionar información geográfica estandarizada y de calidad al personal de la Comisión y público en general. Para cumplir con dichos objetivos y buscando que los datos sean de utilidad al usuario, es necesario documentar la información cartografía a través del manejo de “metadatos geoespaciales”. }
 
 El metadato surge por la necesidad de mejorar la adquisición, distribución, utilización y mapeo de los datos geoespaciales, El metadato se define como la “información acerca de los datos” o “datos de los datos”; que describe el contenido, calidad, condición y referencia espacial de los datos. 
 
@@ -121,7 +121,7 @@ Es importante decir que una vez generado el metadato no se puede borrar. Se pued
 
 \section{Duplicar Registro}
 
-\noindent{Como se menciono anteriormente esta herramienta sirve para duplicar una o varias veces un metadato ya terminado, preferentemente, lo cual resulta de mucha ayuda cuando los datos a capturar son muy similares y son pocos los datos que se deben cambiar.}
+\noindent{Como se mencionó anteriormente esta herramienta sirve para duplicar una o varias veces un metadato ya terminado, preferentemente, lo cual resulta de mucha ayuda cuando los datos a capturar son muy similares y son pocos los datos que se deben cambiar.}
 
 \textbf{Nota: es importante mencionar que el metadato que se usará para hacer duplicado no contenga información con comillas en alguno de los apartados, ya que si las tiene al momento de hacer el duplicado enviara un mensaje de error.} 
 
@@ -211,7 +211,7 @@ A continuación se describen cada uno de los elementos compuestos y sus campos. 
 \subsection{Ligas www}
 \noindent{En este campo se puede anexar una o varias ligas a páginas Web de interés para los usuarios.}
 \begin{figure}[h] %	
-    \includegraphics[width=12cm, height=12.5cm]{img/datosGenerales} %	
+    \includegraphics[width=13cm, height=8.5cm]{img/datosGenerales} %	
 	\caption{Interfaz de Información básica}
 \end{figure}
 
@@ -251,7 +251,7 @@ No se permite el uso de caracteres alfanuméricos (metacaracteres). Por ejemplo:
 \noindent{Los siguientes campos son datos que corresponden al programa, equipo de cómputo y sistema operativo sobre el cual se elaboró el dato geoespacial. Los datos pueden cambiar en función de la actualización del equipo.}
 
 \subsection{Software y hardware}
-\noindent{Nombre del o los programa(s) de cómputo utilizado(s), incluyendo versión, y equipo de cómputo empleado para la elaboración del dato geoespacial. Por ejemplo, ArcMap ArcGIS ver. 10.1 y Dell Precision T5500.}
+\noindent{Nombre del o los programa(s) de cómputo utilizado(s), incluyendo versión, y equipo de cómputo empleado para la elaboración del dato geoespacial. Por ejemplo, ArcMap ArcGIS ver. 10.3 y Dell Precision T5500.}
 
 \subsection{Sistema Operativo}
 \noindent{Nombre y versión del sistema operativo instalado en el equipo de computo empleado.}
@@ -265,7 +265,7 @@ No se permite el uso de caracteres alfanuméricos (metacaracteres). Por ejemplo:
 
 
 \begin{figure}[h] %	
-	\includegraphics[width=12cm, height=6cm]{img/software} %	
+	\includegraphics[width=12cm, height=7cm]{img/software} %	
 	\caption{Interfaz de Ambiente de Trabajo}
 \end{figure}
 
@@ -389,7 +389,7 @@ A continuación se describen cada uno de los elementos compuestos y sus campos q
 \noindent{Nombre del autor o de los autores del dato utilizado. Tomando en cuenta la siguiente estructura; para el primer autor: apellidos seguido de coma, iniciales del o los nombres seguido de un punto; si el autor es una institución sólo se anota la sigla o acrónimo y segundo y tercer autor: inicial del o los nombres seguido de un punto; apellidos seguido de una coma.}
 
 \begin{figure}[h] %	
-	\includegraphics[width=12cm, height=4cm]{img/taxonomia} %	
+	\includegraphics[width=12cm, height=7cm]{img/taxonomia} %	
 	\caption{Interfaz de Taxonomia}
 \end{figure}
 
@@ -448,7 +448,7 @@ Se especifica la estructura del dato geoespacial seleccionando una de las siguie
 
 
 \begin{figure}[h!] %	
-	\includegraphics[width=12cm, height=13cm]{img/datosEspaciales} %	
+	\includegraphics[width=12cm, height=8cm]{img/datosEspaciales} %	
 	\caption{Interfaz de Datos Espaciales}
 \end{figure}
 
@@ -460,7 +460,7 @@ Se especifica la estructura del dato geoespacial seleccionando una de las siguie
 \noindent{Información obtenida a partir de la tabla del dato geoespacial.}
 
 \subsection{Nombre de la Entidad (Tabla)}
-\noindent{Nombre del archivo que contiene los atributos del dato geoespacial (capa digital). Si el dato geoespacial es un shapefile manejar el nombre del dato con extensión .dbf. (Y si el dato es de estructura raster, para un grid de Arc/Info manejar el nombre del dato con la extensión .vat).}
+\noindent{Nombre del archivo que contiene los atributos del dato geoespacial (capa digital). Si el dato geoespacial es un shapefile manejar el nombre del dato con extensión dbf. (Y si el dato es de estructura raster, para un grid de Arc/Info manejar el nombre del dato con la extensión .vat).}
 
 \subsection{Descripción de la Entidad (Tabla)}
 \noindent{Descripción breve del contenido de la tabla del dato geoespacial. Los siguientes incisos describen los campos que contiene la tabla del dato geoespacial, por lo tanto se repetirán “n” veces dependiendo de cuantos campos tenga la tabla.}
@@ -481,7 +481,7 @@ Se especifica la estructura del dato geoespacial seleccionando una de las siguie
 \noindent{Corresponde al tipo de dato que representa los valores de un campo y puede ser de tipo carácter o numérico. Se recomienda verificar la lista ya existente, utilizando el botón.}
 
 \begin{figure}[h!] %	
-	\includegraphics[width=12cm, height=4cm]{img/ambienteDeTrabajo} %	
+	\includegraphics[width=12cm, height=7cm]{img/ambienteDeTrabajo} %	
 	\caption{Interfaz de Atributos}
 \end{figure}
 
@@ -509,6 +509,7 @@ Hay que tener en cuenta que para que sea posible la publicación del archivo se 
 	\includegraphics[width=12cm, height=8cm]{img/cartografiaCargaArchivos} %	
 	\caption{Interfaz de Carga de Archivos}
 \end{figure}
+
 \section{Registro de colaboradores}
 
 \noindent{Esta sección está dedicada a la alta y baja del personal que colabora en la plataforma de captura de metadatos. Para esto se han definido los siguientes roles de participación:}
@@ -530,6 +531,45 @@ El analista puede dar de alta a uno o varios capturistas. Y es quien coordina el
 	\includegraphics[width=12cm, height=6cm]{img/registroColaboradores} %	
 	\caption{Interfaz de Registro de Colaboradores}
 \end{figure}
+
+
+\section{Plantilla}
+
+\noindent{La plantilla isntitucional que se podrá subir al Geoportal de la CONABIO debe de cumplir los estándares institucionales aquí expuestos. De modo que, bajo esta consigna se podra generar dicha plantilla una vez que los metadatos son correctos.}
+
+La versión de ArcGis con la que se procede a generar las plantilla desde el módulo corresponde a la versión 10.3.
+
+Si la institución del país beneficiario no cuenta con dicha licencia o versión, la CONABIO podrá auxiliarle en la generación de dicha plantilla.
+
+También está la posibilidad de realizar la plantilla en Quantum Gis, más sin embargo su calidad aún está en exploración para su posible inclusión en la CONABIO.
+
+Los pasos para generar la plantilla son los siguiente:
+
+0. Instrucciones:
+
+1. Elija el proyecto que se te asignó.
+
+2. Genera la plantilla. Ésta se descargará en su máquina.
+
+3. En tu QuantumGis (o ArcGis) abra tu consula de Python y ejecute el script que descargó. Solo escriba correctamente el código que se muestra como en el ejemplo de abajo:
+
+execfile(r'C://Users//José Galvez//Desktop//nombreDelArchivoQueDescargaste.py')
+
+Hay que decir que la implentación para la elaboración de dicha plantilla, requiere instalar ciertas librerías de Python. Para su uso es recomendable mantener contacto con el Administrador del sistema.
+
+
+\begin{figure}[h!] %	
+	\includegraphics[width=10cm, height=8cm]{img/plantilla} %	
+	\caption{Ejemplo de plantilla}
+\end{figure}
+
+
+\section{XML}
+
+\noindent{El archivo de extensión XML contiene los metadatos e información cartográfica cual será recibida en el Geoportal de la CONABIO. Este es de dominio del Administrador del sistema y, si bien se puede descargar, será la institución quien haga uso de éste. 
+
+
+
 
 
 \chapter*{Apendice. Ejemplos}
